@@ -56,6 +56,10 @@ Following folder structure is recommended for transfer learning tasks.
 
 #### 2.1 Preparing training data
 
+The stomata detection model in the original publication converted all training data to a 3-channel grayscale colorspace to remove any biases due to to color. ```image_converter.ipynb``` can be used to achieve this goal for new training and validation data.
+
+Follow the instructions on ```image_converter.ipynb```. The resulting training and validation images will be saved in ```images/train``` and ```images/val``` folders.
+
 #### 2.2 Image labelling
 
 VGG Image Annotator (VIA-2.0.8 or higher) is used for labelling training images. Download the browser based annotation tool [here](http://www.robots.ox.ac.uk/~vgg/software/via/).
@@ -76,9 +80,9 @@ Instructions on ```transfer_learning_stomata.ipynb``` provide guidance on settin
 
 Make sure all the folder paths are set-up correctly before executing the training process. Advanced users can modify additional parameters such as Anchor size for optimum performance.
 
-The new model will be saved in ```logs``` directory.
+The new model will be saved in ```logs``` directory. keep note of the ```MEAN_PIXEL``` value generated prior to training. This value is later needed for inference.
 
-Inference with the new model can be doen with ```inference_stomata.ipynb```.
+Inference with the new model can be done with ```inference_stomata.ipynb```. Make sure to modify ```MEAN_PIXEL``` value to match the value generated during training.
 
 
 
