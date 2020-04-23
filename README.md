@@ -1,12 +1,12 @@
-### MaskStomata: Generalised Stomata Detection in Microscope Images
+### MaskStomata: Generalised instance segmentation of stomata for Microscope Images
 
 ### Prerequisites:
 
 Matterport implementation of Mask-RCNN: https://github.com/matterport/Mask_RCNN
 
-Tensorflow >=1.5.1 (pre-tensorflow 2.0 is recommended)
+Tensorflow >=1.5.1 (Tensorflow 1.5.1 recommended. April 2020)
 
-Keras > 2.0.8 (Keras 2.1.5 recommended)
+Keras > 2.0.8 (Keras 2.1.5 recommended. April 2020)
 
 # Getting Started:
 
@@ -20,12 +20,15 @@ Following folder structure is recommended for inference tasks.
 .
 |--inference_stomata.ipynb
 |--mask_rcnn_stomata.h5
-|--Test
+|--test
     |--image01.jpg
     |--image02.jpg
     |--...jpg
-|--Results
+|--results
 ``` 
+Instructions on ```inference_stomata.ipynb``` provide guidance on setting-up and running the code in Google Colab environment. The procedure is similar if the code is set-up in a local machine or a cloud computing instance.
+
+The code will generate results for the images contained in the ```test``` folder, and will save the data in the ```results``` folder. All output images along with a ```.csv``` will be saved in this folder.
 
 ### 2. Fine tuning the default model for a specific microscope dataset (Transfer Learning)
 
