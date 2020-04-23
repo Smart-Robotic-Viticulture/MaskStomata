@@ -68,7 +68,7 @@ VGG Image Annotator (VIA-2.0.8 or higher) is used for labelling training images.
 6. To save the annotation values, go to **Annotation>Export Annotations(as json)** and save the file as ```va_region_data.json``` inside the train folder. Annotations Must be saved for training.
 7. Follow steps 1-6 for validation dataset as well.
 
-![caption](via.jpg)
+![via_interface](assets/via_interface.jpg)
 
 #### 2.3 Training Process
 
