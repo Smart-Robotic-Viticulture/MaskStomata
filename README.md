@@ -15,6 +15,10 @@ Keras > 2.0.8 (Keras 2.1.5 recommended. April 2020)
 Instructions are provided assuming a Google Colab environment. More advanced users can set-up the code in their own python environment
 following the same instructions.
 
+### 0. Download the stomata detector model
+
+TODO: upload this on unsw side and copy the link over.
+
 ### 1. Using this repository for inference
 
 Following folder structure is recommended for inference tasks.
@@ -61,6 +65,8 @@ Following folder structure is recommended for transfer learning tasks.
 The stomata detection model in the original publication converted all training data to a 3-channel grayscale colorspace to remove any biases due to to color. ```image_converter.ipynb``` can be used to achieve this goal for new training and validation data.
 
 Follow the instructions on ```image_converter.ipynb```. The resulting training and validation images will be saved in ```images/train``` and ```images/val``` folders.
+
+TODO: upload image_converter notebook
 
 #### 2.2 Image labelling
 
