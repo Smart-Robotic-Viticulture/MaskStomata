@@ -1,5 +1,7 @@
 ### MaskStomata: Generalised instance segmentation of stomata for Microscope Images
 
+This repsoitory provides code for a robust stomata detection and instance segmentation method for microscope images. FOllow instructions on Section 1 to test the code on your own datasets.
+
 ### Prerequisites:
 
 Matterport implementation of Mask-RCNN: https://github.com/matterport/Mask_RCNN
