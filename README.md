@@ -66,8 +66,6 @@ The stomata detection model in the original publication converted all training d
 
 Follow the instructions on ```image_converter.ipynb```. The resulting training and validation images will be saved in ```images/train``` and ```images/val``` folders.
 
-TODO: upload image_converter notebook
-
 #### 2.2 Image labelling
 
 VGG Image Annotator (VIA-2.0.8 or higher) is used for labelling training images. Download the browser based annotation tool [here](http://www.robots.ox.ac.uk/~vgg/software/via/).
