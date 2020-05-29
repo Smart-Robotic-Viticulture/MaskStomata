@@ -28,7 +28,7 @@ Contact hiranya.jayakody@unsw.edu.au to receive the link to the model.
 The following folder structure is recommended for inference tasks.
 ```
 .
-|--inference_stomata.ipynb
+|--stomata_inference.ipynb
 |--mask_rcnn_stomata.h5
 |--images
     |--test
