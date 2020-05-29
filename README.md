@@ -17,7 +17,7 @@ following the same instructions.
 
 ### 0. Download the stomata detector model
 
-TODO: upload this on unsw side and copy the link over.
+contact hiranya.jayakody@unsw.edu.au to receive the link to the model.
 
 ### 1. Using this repository for inference
 
@@ -90,11 +90,11 @@ The new model will be saved in ```logs``` directory. keep note of the ```MEAN_PI
 
 Inference with the new model can be done with ```inference_stomata.ipynb```. Make sure to modify ```MEAN_PIXEL``` value to match the value generated during training.
 
-
-
 ### 3. Publications
 
 ### 4. Citing this work
+
+Contact hiranya.jayakody@unsw.edu.au for latest citation information.
 
 
 
