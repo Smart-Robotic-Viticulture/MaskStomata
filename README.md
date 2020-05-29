@@ -1,8 +1,12 @@
 ### MaskStomata: Generalised instance segmentation of stomata for Microscope Images
 
+Developed by Hiranya Jayakody. April 2020.
+Smart Robotics Viticulture Group, UNSW, Sydney.
+
+
 This repository provides code for a robust stomata detection and instance segmentation method for microscope images. Follow instructions in Section 1 to test the code on your own datasets.
 
-### Prerequisites:
+### Package Dependencies:
 
 Matterport implementation of Mask-RCNN: https://github.com/matterport/Mask_RCNN
 
