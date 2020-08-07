@@ -98,6 +98,8 @@ Inference with the new model can be done with ```inference_stomata.ipynb```. Mak
 
 ### 4. Citing this work
 
+Hiranya Samanga Jayakody, Paul Petrie, Hugo de Boer et al. A Generalised Approach for High-throughput Instance Segmentation of Stomata in Microscope Images, 05 June 2020, PREPRINT (Version 1) available at Research Square [+https://doi.org/10.21203/rs.3.rs-33223/v1+]
+
 Contact hiranya.jayakody@unsw.edu.au for latest citation information.
 
 
