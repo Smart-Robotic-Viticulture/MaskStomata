@@ -80,8 +80,7 @@ To start the process, save the labelled train and validation data in ```train_or
 
 All training and validation data re converted to a 3-channel grayscale colorspace before training, with the aim of removing any biases in the colorspace. ```image_converter.ipynb``` is used to achieve this goal for new training and validation data.
 
-First, save the labelled train and validation data in ```train_original``` and ```val_original``` folders.
-Follow the instructions in ```image_converter.ipynb```. The resulting training and validation images will be saved in the ```images/train``` and ```images/val``` folders.
+First, save the labelled train and validation data in ```train_original``` and ```val_original``` folders. Follow the instructions in ```image_converter.ipynb```. The resulting training and validation images will be saved in the ```images/train``` and ```images/val``` folders. Make sure you copy over the corresponding ```via_region_data.json``` files from ```train_original``` and ```val_original``` to ```images/train``` and ```images/val``` folders
 
 #### 2.2 Image labelling
 
