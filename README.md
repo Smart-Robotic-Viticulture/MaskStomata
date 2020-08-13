@@ -5,7 +5,7 @@ Developed by Hiranya Jayakody. April 2020.
 Smart Robotics Viticulture Group, UNSW, Sydney.
 
 
-This repository provides code for a robust stomata detection and instance segmentation method for microscope images. Follow instructions in Section 1 to test the code on your own datasets.
+This repository provides the code for a robust stomata detection and instance segmentation method for microscope images of plant leaves. Follow the instructions in Section 1 to test the code on your own dataset.
 
 ### Package Dependencies:
 
@@ -17,11 +17,11 @@ Keras > 2.0.8 (Keras 2.1.5 recommended. April 2020)
 
 # Getting Started:
 
-Instructions are provided assuming a Google Colab environment is being used. More advanced users can set-up the code in their own python environment following the same instructions.
+Instructions are provided assuming the code is run on the Google Colab environment. More advanced users can set-up the code in their own python environment following the same instructions.
 
 ### 0. Download the stomata detector model
 
-Contact hiranya.jayakody@unsw.edu.au to receive the link to the model.
+Contact hiranya.jayakody@unsw.edu.au to get access to the trained model.
 
 ### 1. Using this repository for inference
 
@@ -37,13 +37,13 @@ The following folder structure is recommended for inference tasks.
         |--...jpg
     |--results
 ``` 
-Instructions on ```inference_stomata.ipynb``` provide guidance on setting-up and running the code in Google's Colab environment. The procedure is similar if the code is set-up in a local machine or a cloud computing instance.
+Instructions on ```inference_stomata.ipynb``` provide guidance on setting-up and running the code in Google's Colab environment. The same procedure applies if the code is set-up in a local machine or a cloud computing instance.
 
 The code will generate results for the images contained in the ```test``` folder, and will save the data in the ```results``` folder. All output images along with a ```results.csv``` file (which contains all metrics) will be saved in this folder.
 
 ### 2. Fine tuning the default model for a specific microscope dataset (Transfer Learning)
 
-Recall values may be low for the default stomata model when the input consists of low-quality images. In such cases, reseaarchers may opt to fine tune the Mask-RCNN model provided, using trasnfer learning techniques.
+Average performance may be expected for the default stomata model when the input dataset consists of low-quality images. In such cases, researchers may opt to fine-tune the Mask-RCNN model, using transfer learning techniques.
 
 The following folder structure is recommended for transfer learning tasks.
 ```
@@ -51,6 +51,16 @@ The following folder structure is recommended for transfer learning tasks.
 |--transfer_learning_stomata.ipynb
 |--mask_rcnn_stomata.h5
 |--images
+    |--train_original
+        |--image01.jpg
+        |--image02.jpg
+        |--...
+        |--via_region_data.json
+    |--val_original
+        |--image01.jpg
+        |--image02.jpg
+        |--...
+        |--via_region_data.json
     |--train
         |--image01.jpg
         |--image02.jpg
@@ -64,10 +74,13 @@ The following folder structure is recommended for transfer learning tasks.
 |--logs
 ```
 
+To start the process, save the labelled train and validation data in ```train_original``` and ```val_original``` folders. The image data in these folders will be prepared for machine learning through ```image_converter.ipynb```.
+
 #### 2.1 Preparing training data
 
-The stomata detection model in the original publication converted all training data to a 3-channel grayscale colorspace to remove any biases due to to color. ```image_converter.ipynb``` can be used to achieve this goal for new training and validation data.
+All training and validation data re converted to a 3-channel grayscale colorspace before training, with the aim of removing any biases in the colorspace. ```image_converter.ipynb``` is used to achieve this goal for new training and validation data.
 
+First, save the labelled train and validation data in ```train_original``` and ```val_original``` folders.
 Follow the instructions in ```image_converter.ipynb```. The resulting training and validation images will be saved in the ```images/train``` and ```images/val``` folders.
 
 #### 2.2 Image labelling
