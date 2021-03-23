@@ -4,7 +4,7 @@ Developed by Hiranya Jayakody. April 2020.
 
 [Smart Robotic Viticulture Group], UNSW, Sydney.
 
-If you use this work, please cite: Hiranya Samanga Jayakody, Paul Petrie, Hugo Jan de Boer, Mark Whitty, A Generalised Approach for High-throughput Instance Segmentation of Stomata in Microscope Images, 09 March 2021, available at [+https://doi.org/10.1186/s13007-021-00727-4+].
+If you use this work, please cite: Hiranya Samanga Jayakody, Paul Petrie, Hugo Jan de Boer, Mark Whitty, A Generalised Approach for High-throughput Instance Segmentation of Stomata in Microscope Images, 09 March 2021, available at [https://doi.org/10.1186/s13007-021-00727-4].
 
 Contact hiranya.jayakody@unsw.edu.au for latest citation information.
 
