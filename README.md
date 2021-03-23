@@ -2,7 +2,11 @@
 
 Developed by Hiranya Jayakody. April 2020.
 
-Smart Robotics Viticulture Group, UNSW, Sydney.
+[Smart Robotic Viticulture Group], UNSW, Sydney.
+
+If you use this work, please cite: Hiranya Samanga Jayakody, Paul Petrie, Hugo Jan de Boer, Mark Whitty, A Generalised Approach for High-throughput Instance Segmentation of Stomata in Microscope Images, 09 March 2021, available at [+https://doi.org/10.1186/s13007-021-00727-4+].
+
+Contact hiranya.jayakody@unsw.edu.au for latest citation information.
 
 
 This repository provides the code for a robust stomata detection and instance segmentation method for microscope images of plant leaves. Follow the instructions in Section 1 to test the code on your own dataset.
@@ -106,13 +110,7 @@ The new model will be saved in the ```logs``` directory. Keep note of the ```MEA
 
 Inference with the new model can be done with ```inference_stomata.ipynb```. Make sure to modify ```MEAN_PIXEL``` value to match the value generated during training.
 
-### 3. Publications
 
-### 4. Citing this work
-
-Hiranya Samanga Jayakody, Paul Petrie, Hugo de Boer et al. A Generalised Approach for High-throughput Instance Segmentation of Stomata in Microscope Images, 05 June 2020, PREPRINT (Version 1) available at Research Square [+https://doi.org/10.21203/rs.3.rs-33223/v1+]
-
-Contact hiranya.jayakody@unsw.edu.au for latest citation information.
 
 
 
