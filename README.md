@@ -25,7 +25,7 @@ Instructions are provided assuming the code is run on the Google Colab environme
 
 ### 0. Download the stomata detector model
 
-Contact hiranya.jayakody@unsw.edu.au to get access to the trained model.
+Download the trained model here [http://www.robotics.unsw.edu.au/srv/publication/2020_mask_rcnn_stomata_51.h5]. Contact m.whitty@unsw.edu.au if you are unable to access this model.
 
 ### 1. Using this repository for inference
 
@@ -33,7 +33,7 @@ The following folder structure is recommended for inference tasks.
 ```
 .
 |--stomata_inference.ipynb
-|--mask_rcnn_stomata.h5
+|--2020_mask_rcnn_stomata_51.h5
 |--images
     |--test
         |--image01.jpg
